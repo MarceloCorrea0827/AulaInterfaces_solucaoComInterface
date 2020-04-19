@@ -1,4 +1,6 @@
-﻿namespace SolSemInterface.Entities
+﻿using System;
+
+namespace SolSemInterface.Entities
 {
     class CarRental
     {
