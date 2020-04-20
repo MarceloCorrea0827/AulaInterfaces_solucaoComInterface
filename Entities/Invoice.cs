@@ -20,7 +20,7 @@ namespace SolSemInterface.Entities
 
         public override string ToString()
         {
-            return "Basic payment"
+            return "Basic payment: "
                 + BasicPayment.ToString("F2", CultureInfo.InvariantCulture)
                 + "\nTax: "
                 + Tax.ToString("F2", CultureInfo.InvariantCulture)

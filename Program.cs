@@ -12,9 +12,9 @@ namespace SolSemInterface
             Console.WriteLine("Enter rental data");
             Console.Write("Car model: ");
             string model = Console.ReadLine();
-            Console.WriteLine("Pickup (dd/mm/yyyy hh:mm): ");
+            Console.Write("Pickup (dd/mm/yyyy hh:mm): ");
             DateTime start = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
-            Console.WriteLine("Retunr (dd/mm/yyyy hh:mm): ");
+            Console.Write("Retunr (dd/mm/yyyy hh:mm): ");
             DateTime finish = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
 
             Console.Write("Enter price per hour: ");
@@ -30,6 +30,10 @@ namespace SolSemInterface
 
             // Processando o Invoice para CarRental
             rentalService.ProcessInvoice(carRental);
+
+            // Mostrando os resultados
+            Console.WriteLine("INVOICE:");
+            Console.WriteLine(carRental.Invoice);
         }
     }
 }
