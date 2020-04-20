@@ -22,9 +22,9 @@ namespace SolSemInterface.Entities
         {
             return "Basic payment"
                 + BasicPayment.ToString("F2", CultureInfo.InvariantCulture)
-                + "\Tax: "
+                + "\nTax: "
                 + Tax.ToString("F2", CultureInfo.InvariantCulture)
-                + "\Total payment: "
+                + "\nTotal payment: "
                 + TotalPayment.ToString("F2", CultureInfo.InvariantCulture);
         }
     }
