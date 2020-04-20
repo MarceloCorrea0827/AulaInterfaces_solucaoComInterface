@@ -1,4 +1,4 @@
-# AulaInterfaces_solucaoSemInterface
+# AulaInterfaces_solucaoComInterface
 Nesta aula o Prof. Dr. Nélio Alves apresenta uma solução com a utilização de Interfaces.
 
 For the creation of this project I used the MS Visual Studio 2019 Community
