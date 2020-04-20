@@ -26,7 +26,7 @@ namespace SolSemInterface
             CarRental carRental = new CarRental(start, finish, new Vehicle(model));
 
             // Instanciando um Service RentalService
-            RentalService rentalService = new RentalService(hour, day);
+            RentalService rentalService = new RentalService(hour, day, new BrazilTaxServices());
 
             // Processando o Invoice para CarRental
             rentalService.ProcessInvoice(carRental);

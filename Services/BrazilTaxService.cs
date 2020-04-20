@@ -1,6 +1,6 @@
 ﻿namespace SolSemInterface.Services
 {
-    class BrazilTaxServices
+    class BrazilTaxServices : ITaxService
     {
         public double Tax(double amount)
         {
